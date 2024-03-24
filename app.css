@@ -7,6 +7,7 @@ header {
     border-radius: 15px;
     max-width: 700px;
     min-width: 700px;
+    box-shadow: 7px 7px#729ac0;
     
 }
 
@@ -24,4 +25,5 @@ body {
     margin: 3vh auto;
     max-width: 700px;
     min-width: 700px;
+    box-shadow: 7px 7px#729ac0;
 }
