@@ -1,30 +1,50 @@
+ :root {
+    --highlight-color: #f0ffff;
+    --mid-color: #bde0ff;
+    --shadow-color: #729ac0;
+ }
+
+ body {
+    background-color: #bde0ff;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
 header {
     text-align: center;
-    margin: 1em auto;
+    margin: 3vh auto;
     border: 5px solid #f0ffff;
-    padding: 5px;
+    padding: 1em;
     background-color:#f0ffff;
     border-radius: 15px;
     max-width: 700px;
     min-width: 700px;
     box-shadow: 7px 7px#729ac0;
-    
-    
+     
 }
 
-body {
-    background-color: #bde0ff;
-    padding: 10px;
-}
+
 
 .container {
     border: 5px solid #f0ffff;
-    padding: 1px;
     background-color:#f0ffff;
     border-radius: 15px;
-    padding: 15px 1em;
+    padding: 1em;
     margin: 3vh auto;
     max-width: 700px;
     min-width: 700px;
     box-shadow: 7px 7px#729ac0;
+}
+
+.divider {
+    width: 700px;
+    height: 7px;
+    margin: 3vh auto;
+    padding: 15px auto;
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+}
+
+.links-headers {
+    text-align: center;
 }

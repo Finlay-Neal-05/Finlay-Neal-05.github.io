@@ -1,0 +1,25 @@
+:root {
+    --highlight-color: #f0ffff;
+    --mid-color: #bde0ff;
+    --shadow-color: #729ac0;
+}
+
+body {
+    background-color: var(--mid-color);
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+#story-title {
+    text-align: center;
+    background-color: var(--highlight-color);
+    width: 700px;
+    margin: 3vh auto;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 7px 7px#729ac0;
+}
+
+.container-header {
+    
+}
