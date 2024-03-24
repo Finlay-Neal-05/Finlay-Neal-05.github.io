@@ -1,29 +1,27 @@
 header {
     text-align: center;
     margin: 1em auto;
-    border: 5px solid #b5d5f1;
-    padding: 10px;
-    background-color:#bde0ff;
+    border: 5px solid #f0ffff;
+    padding: 5px;
+    background-color:#f0ffff;
     border-radius: 15px;
-    font-family: Verdana;
     max-width: 700px;
     min-width: 700px;
     
 }
 
 body {
-    background-color: #f0ffff;
+    background-color: #bde0ff;
     padding: 10px;
 }
 
 .container {
-    border: 5px solid #b5d5f1;
+    border: 5px solid #f0ffff;
     padding: 1px;
-    background-color:#bde0ff;
+    background-color:#f0ffff;
     border-radius: 15px;
     padding: 15px 1em;
     margin: 3vh auto;
-    font-family: verdana;
     max-width: 700px;
     min-width: 700px;
 }
