@@ -4,11 +4,17 @@
     --shadow-color: #729ac0;
  }
 
+ html {
+    display: flex;
+    justify-content: center;
+ }
+
  body {
     background-color: #bde0ff;
     padding: 10px;
     font-family: "Inter", sans-serif;
     z-index: -1;
+    max-width: 1500px;
 
 }
 
@@ -32,10 +38,11 @@ header {
 } */
 
 .box-container {
-    width: 100%;
+    width: max-width: 1500px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex: 1 1 1500px
 
     
 }
@@ -48,7 +55,7 @@ header {
     border-radius: 15px;
     box-shadow: 7px 7px#729ac0;
     flex: 1 1 200px;
-    max-width: 300px;
+    max-width:300px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
