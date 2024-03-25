@@ -17,17 +17,29 @@ header {
     padding: 1em;
     background-color:#f0ffff;
     border-radius: 15px;
-    max-width: 700px;
-    min-width: 700px;
-    box-shadow: 7px 7px#729ac0;
+    flex: 2 1 1000px;
+    box-shadow: 7px 7px var(--shadow-color);
      
 }
 
 .box-container {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
+}
+
+.box-left, .box-right {
+    background-color: var(--highlight-color);
+    margin: 3vh 15px;
+    border: 5px solid var(--highlight-color);
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 7px 7px#729ac0;
+    flex: 1 1 200px;
+    max-width: 300px;
+
 }
 
 
