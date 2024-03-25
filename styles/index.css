@@ -9,6 +9,7 @@
     padding: 10px;
     font-family: "Inter", sans-serif;
     z-index: -1;
+
 }
 
 header {
@@ -20,20 +21,22 @@ header {
     border-radius: 15px;
     flex: 2 1 1000px;
     box-shadow: 7px 7px var(--shadow-color);
+    max-width: 1500px;
      
 }
 
-.header-image {
+/* .header-image {
     background-image: url("../images/mountain-back.png"); 
     z-index: 2;
     height: 400px;
-}
+} */
 
 .box-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
     
 }
 
