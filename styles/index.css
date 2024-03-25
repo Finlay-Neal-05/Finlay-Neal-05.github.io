@@ -8,6 +8,7 @@
     background-color: #bde0ff;
     padding: 10px;
     font-family: "Inter", sans-serif;
+    z-index: -1;
 }
 
 header {
@@ -20,6 +21,12 @@ header {
     flex: 2 1 1000px;
     box-shadow: 7px 7px var(--shadow-color);
      
+}
+
+.header-image {
+    background-image: url("../images/mountain-back.png"); 
+    z-index: 2;
+    height: 400px;
 }
 
 .box-container {
@@ -39,6 +46,9 @@ header {
     box-shadow: 7px 7px#729ac0;
     flex: 1 1 200px;
     max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
 }
 
@@ -64,4 +74,25 @@ header {
 
 .links-headers {
     text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+    color: var(--shadow-color);
+}
+
+.chainlink-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.rb-header {
+    display: flex;
+    justify-content: center;
+    color: var(--shadow-color);
+}
+
+.lb-header {
+    display: flex;
+    color: var(--shadow-color);
 }
