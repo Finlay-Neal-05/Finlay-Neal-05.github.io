@@ -87,3 +87,15 @@ img {
 #css-box-image {
     margin: 10px;
 }
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--highlight-color);
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 15px;
+}
