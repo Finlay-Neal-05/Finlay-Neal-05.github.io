@@ -13,13 +13,30 @@ body {
 #story-title {
     text-align: center;
     background-color: var(--highlight-color);
-    width: 700px;
     margin: 3vh auto;
     border-radius: 15px;
     padding: 1em;
     box-shadow: 7px 7px#729ac0;
 }
 
+.container {
+    border: 5px solid #f0ffff;
+    background-color:#f0ffff;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 3vh auto;
+    box-shadow: 7px 7px#729ac0;
+    flex: 2 1 700px;
+}
+
+.divider {
+    width: 700px;
+    height: 7px;
+    margin: 3vh auto;
+    padding: 15px auto;
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+}
 
 .container-header {
     
