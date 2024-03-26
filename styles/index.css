@@ -27,7 +27,7 @@ header {
     flex: 2 1 1000px;
     box-shadow: 7px 7px var(--shadow-color);
     max-width: 1500px;
-     
+    color: var(--shadow-color);
 }
 
 img {
