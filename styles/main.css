@@ -10,14 +10,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-#story-title {
-    text-align: center;
-    background-color: var(--highlight-color);
-    margin: 3vh auto;
-    border-radius: 15px;
-    padding: 1em;
-    box-shadow: 7px 7px#729ac0;
-}
+
 
 .container {
     border: 5px solid #f0ffff;
@@ -44,8 +37,4 @@ footer {
     margin: 1em auto;
     padding: 1em;
     border-radius: 15px;
-}
-
-.container-header {
-    
 }
