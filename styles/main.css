@@ -10,6 +10,19 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+header {
+    text-align: center;
+    margin: 3vh auto;
+    border: 5px solid #f0ffff;
+    padding: 1em;
+    background-color:#f0ffff;
+    border-radius: 15px;
+    flex: 2 1 1000px;
+    box-shadow: 7px 7px var(--shadow-color);
+    max-width: 1500px;
+     
+}
+
 
 
 .container {
