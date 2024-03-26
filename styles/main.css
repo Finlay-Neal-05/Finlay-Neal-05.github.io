@@ -8,6 +8,8 @@ body {
     background-color: var(--mid-color);
     padding: 10px;
     font-family: "Inter", sans-serif;
+    font-size: large;
+    line-height: 1.5;
 }
 
 header {
@@ -21,6 +23,10 @@ header {
     box-shadow: 7px 7px var(--shadow-color);
     max-width: 1500px;
      
+}
+
+h4 {
+    text-align: center;
 }
 
 
