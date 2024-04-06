@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>javascript-dom</title>
+    </head>
+    <body>
+        <header>
+            <h1>The JavaScript DOM</h1>
+        </header>
+        <div class="divider"></div>
+        <div class="container">
+            <h4>The relationship between HTML, CSS and JavaScript:</h4>
+            <p>If HTML is the words of the story, including pauses and volume (boldness), and CSS is the pages its written upon, including color, borders, little designs in the corners... then JavaScript is turns it into a spellbook. It lets you interract with the book, like keeping count of how many times the word "and" is used. It let's you do practically anything with the words inside the story, and the pages it's written upon. </p>
+            <h4>Control Flow:</h4>
+            <p>Control flow is simply how and in what order the code is run. For example it starts at the top and ends at the bottom. However sometimes things come in the way to make it do a certain task repeatedly, or go back and rerun a certain piece of code. For example, imagine a pinball machine. At first the ball is launched straight up and begins to fall. (running the code), but then it hits a pin and starts bouncing back and forth. This could be a loop. It does this a specified amount of times and then continues to fall, occasionally bouncing between more pins before eventually reaching the end. Code runs the same way, from the top to the bottom of the script, but occasionally it hits a pin (loop) and bounes around, or sometimes it goes into a tunnel that takes it back to the top (a function), but eventually it always reaches the end. (unless you have an endless loop...) </p>
+            <h4>The JavaScript DOM:</h4>
+            <p>The Document Object Model (DOM) is an interface put together from multiple different API's, that together allow users to use Javascript to interract with web documents. It represents the webpage so that a script can access and change the elements within; Structure, style and content. 
+
+                It is an object oriented model, meaning that it can be manipulated using JavaScript. An example of how this might be used is with the <code class="language-javascript">document.QuerySelectorAll("p"); </code> line. Here we can see a few things happening, let's break it down. The first thing we see is 'document'. This is the object, meaning that anything we add afterwards will apply to that. The document object means it is anything inside the html document. there is a hierachy of objects, and above document is window, but it is rarely referred to when working with the DOM. Following the 'document' object we can see the <code class="language-javascript">.QuerySelectorAll() </code>function. What this does is it asks the webpage to list all of the elements specified within the () brackets. In the example above it can be seen that it is calling for all (p) elements. Once we have these elements selected we could then assign them to a variable, or use the QuerySelector to select them, and then use something like <code class="language-html">.innerHTML = "" </code> to edit the content of the (p) elements. For example if we had <code class="language-html"> Hello world </code>in our html, but we saw that and wanted to make it more dramatic, we could use <code class="language-javascript">.QuerySelectorAll("p") </code> to select all the (p) elements (in our case just the one) and then use the <code class="language-javascript">.innerHTML </code> method to change the text. For example: <code class="language-javascript">.QuerySelectorAll("p").innerHTML = "Hello world!!!!!". </code> This would change the text within our (p) element to "Hello world!!!!!". Much more dramatic isn't it?.
+                
+                
+                From that example we can gather that the DOM can be used to access and work with html elements.. But what about CSS? Well the same method can be used to access elements and change their styling! For example: <code calss="language-javascript"> document.QuerySelectorAll("p")... </code> same so far? note all we have done is selected the elements, we haven't added any 'funtions' yet. perviously we used <code class="language-javascript">.innerHTML </code>, but we don't want to access the html this time, we want to access the CSS.. well would we use .innerCSS?... Not quite. the CSS isn't inside the (p)' tag is it!. In javascript the modifiers of an element are called attributes.. CSS modifies HTML so in JS we would have to call the attribute funtion. But how do we do this? with a function called <code class="language-javascript"> .setAttribute() </code> ! Inside the brackets we can put a 'style' string, followed by a comma and then our CSS (Also in ' ' marks). Let's try it out. First use the DOM to select an object: <code class="language-javascript"><.QuerySelectorAll("p") </code> Then we'll tell it what to do: <code class="language-javascript"> .QuerySelectorAll("p").setAttribute('style', 'color: red; font-weight: bold') </code>. Now we have a bold, red "Hello world!!!!!" on our webpage! all without touching the HTML document!
+                
+                We can see that the DOM can be used to work with both HTML and CSS, and that it is incredibly versetile as a tool for webpages and alike. 
+            </p>
+            <h4>Arrays and Objects:</h4>
+            <p>Arrays and Objects are both containers for information. Imagine them two baskets, both have little bits of paper in them with writing on one side (the value) and an identifier on the other so you can quickly find the information you need. (the index). The biggest difference is in the identifier: in an array the identifier is a number, and in an object the identifer is a name. For example: an index can be accessed with: indexName[8] where the number in the brackets is the identifier. This would retrieve the 9th object in the basket (count starting from 0 :D). In an object it is slightly different: to find an item inside an object we would go: objectName.indexName with the object name coming first and the name of the index connected by a period. </p>
+            <h4>Functions:</h4>
+            <p>Finally there are functions. Functions act as a call to a chunk of code. Imagine you trained your dog to fetch cold beverages from the fridge. You would give it a commant "get me a cold drink" and the dog would execute a series of things to do that, for example it would walk out the door, walk down the hall, jump up and open the kitchen door (a very well trained dog perhaps) and open the fridge, then it would get a cold beverage and do all that in reverse before finally delivering the cold drink to you. Functions work the same way, You define what a command is, and then 'teach' the code (or your well trained dog) what to do. This is a long, but one off process. Then everytime in the future you want your code (or dog) to repeat that task, you just have to issue the command. Functions are invaluable because they allow for this repeated use of the same command. In a real use case you could use a function to update the name of a person on a screen, or to change the numbers on a clock. </p>
+        </div>
+        <div class="divider"></div>
+        <footer><a href="../index.html">return home</a></footer>
+    </body>
+</html>
