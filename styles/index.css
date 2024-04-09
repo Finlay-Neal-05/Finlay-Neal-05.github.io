@@ -41,11 +41,21 @@ img {
 } */
 
 .box-container {
+<<<<<<< HEAD
   max-width: 1500px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex: 1 1 1500px;
+=======
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 1 1500px
+
+    
+>>>>>>> d4c98b2eddf225ce1511a42a1581b50edea13baa
 }
 
 .box-left,
@@ -110,9 +120,15 @@ img {
 }
 
 .text-container {
+<<<<<<< HEAD
   display: flex;
   padding: 1em;
   background-color: ;
+=======
+    display: flex;
+    padding: 1em;
+    /* background-color: ; */
+>>>>>>> d4c98b2eddf225ce1511a42a1581b50edea13baa
 }
 
 .links-container {
